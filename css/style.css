@@ -1,0 +1,368 @@
+body, html{
+    font-family: 'Roboto', sans-serif;
+}
+.main_div{
+    height:100%;
+    display:flex;
+}
+.sidenav{
+    width:100px;
+    height:100%;
+    position: relative;
+    background-color: red;
+}
+.content{
+    flex-grow: 1;
+    height:auto;
+    padding-left:50px;
+}
+.fixed_sidenav{
+    position: fixed;
+    width:100px;
+    height:100%;
+    background-color: #f8f8f8;
+    top:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px #d2d2d2;
+}
+.logo{
+    width:80px;
+    margin:20px auto;
+}
+.logo img{
+    width:80px;
+}
+.side_hr{
+    height:2px;
+    background-color: gray;
+    margin:auto;
+    margin-bottom:20px;
+    width:80px;
+}
+.side_block{
+    width:100px;
+    height:100px;
+    border-bottom:1px solid gray;
+    text-align: center;
+    line-height:100px;
+    font-size:25px;
+    color:#04acec;
+    transition: 0.5s ease;
+}
+.side_block:hover{
+    color:white;
+    background-color:#04acec;
+}
+.side_block:hover{
+    background-color: #04acec;
+}
+.person_circle{
+    height:30px;
+    width:30px;
+    border-radius: 30px;
+    border:1px solid #04acec;
+    display: inline-block;
+    line-height: 30px;
+    color:#04acec
+}
+#dropup_block{
+    margin-left:10px;
+    margin-bottom:20px;
+}
+#drop_racuni{
+    height:0px;
+    overflow: hidden;
+    transition:0.5s ease;
+}
+.hovera:hover{
+    color:#04acec!important;
+    background-color: white!important;
+    transition: 0.3s ease;
+}
+.hoverdodaj:hover{
+    color:#04acec!important;
+    transition: 0.3s ease;
+}
+.login_logo{
+    height:100px;
+    margin-bottom:30px;
+}
+.active{
+    background-color: #04acec!important;
+    color: white !important;
+}
+#barChart{
+    width:80%;
+    margin:80px auto;
+}
+#doughnutChart{
+    width:500px;
+    margin:80px auto;
+}
+#lineChart{
+    width:80%;
+    margin:80px auto;
+}
+.title_block{
+    margin:auto;
+    width:fit-content;
+    margin-top:10px;
+}
+.title_block hr{
+    background-color:#04acec;
+    height:3px;
+    margin:auto!important;
+    width:50%;
+}
+.title_content{
+    color:gray;
+    text-align: center;
+    font-size:40px;
+}
+.subtitle{
+    margin:30px 0px;
+    font-size:30px;
+    color:#008fc7;
+}
+.section_devide{
+    height:1px;
+    background: gray;
+    width:95%;
+}
+.year_lable{
+    color:gray;
+    font-size:18px;
+}
+#years{
+    height:35px;
+    width:100px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:17px;
+}
+.year_sub{
+    background: #04acec;
+    color:white;
+    border:none;
+    height:35px;
+    padding:0px 25px;
+    margin-left:5px;
+    border-radius: 5px;
+    font-size:17px;
+}
+.form_year{
+    margin-top:30px;
+}
+
+
+/*Popup css*/
+.popup{
+    position:fixed;
+    top:0px;
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: +999;
+    display: none;
+    cursor:pointer;
+}
+.popup_center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height:350px;
+    width:500px;
+    background-color: white;
+    border-radius: 10px;
+    border:3px solid #04acec;
+}
+.pop_title{
+    font-size:30px;
+    text-align: center;
+    margin:30px 0px 20px 0px;
+    color:#04acec;
+}
+.pop_div{
+    width:400px;
+    margin:50px auto auto auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.pop_block{
+    width:150px;
+    height:150px;
+    border-radius: 5px;
+    border:2px solid #04acec;
+    text-align: center;
+    font-size:18px;
+    color:#04acec;
+    background-color: white;
+    transition:0.3s ease;
+}
+.pop_block:hover{
+    background-color: #04acec;
+    color:white;
+    font-size:20px;
+}
+.transakcija{
+    width:fit-content;
+    padding:13px 20px;
+    font-size:18px;
+    font-weight: bold;
+    border:none;
+    border-radius: 10px;
+    margin-right:20px;
+}
+.transakcija.pr{
+    background-color: #04acec!important;
+    color:white;
+}
+.transakcija.light{
+    background-color: #e2e2e2!important;
+}
+#transakcija:hover{
+    background-color:#0989bb;
+    width:250px;
+    height:70px;
+    font-size:24px;
+    font-weight: bold;
+}
+.account_balance{
+    width:350px;
+    height:70px;
+    margin-top: 50px;
+    margin-right: 100px;
+    text-align: center;
+    font-size:24px;
+    font-weight: bold;
+    color:#04acec;
+
+
+
+}
+.stanje{
+    color:orange!important;
+    font-weight: lighter;
+}
+.container_tabela{
+    border-radius: 5px;
+    border:2px solid #b9c0c3;
+    text-align: center;
+    font-size:24px;
+    color:#04acec;
+    background-color: white;
+}
+.transaction_table{
+    font-size:22px;
+    color:black;
+    background-color: white;
+    padding:20px;
+}
+.gornji{
+    display:flex;
+    justify-content: space-between;
+    width:95%;
+    height:450px;
+}
+
+.container_chart{
+    width:500px;
+    height:350px;
+    margin-top: 25px;
+}
+
+
+.transakcija_polje{
+    width:100%;
+    
+}
+.add_transaction{
+    
+    width:500px;
+    height:700px;
+    background-color: white;
+    border:2px solid #d2dadd;
+    border-radius: 10px;
+    padding:20px;
+}
+.form_transaction{
+    margin-top:30px;
+}
+#date{
+    font-size:20px;
+}
+.add_category{
+    margin-top: 10px;
+    height:20px;
+    font-size: 18px;
+}
+.transaction_body {
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+.w-100 btn btn-lg btn-primary{
+    width:150px;
+}
+.dodaj_trans{
+    color:gray;
+    text-align: center;
+    font-size:40px;
+    font-weight: bold;
+}
+.add_category_link{
+    text-decoration: none;
+}
+table{
+   width:100%;
+  padding:10px;
+}
+.container{
+    width:90%!important;
+}
+.container_nav{
+    margin-bottom:100px;
+    width:95%;
+}
+.bluetext{
+    color:#008fc7;
+}
+.home_tit{
+    font-size:35px;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+.home_info{
+    font-size:18px;
+    margin-bottom:25px;
+}
+.home_info span{
+    font-weight:bold;
+    color:gray;
+}
+.last_info{
+    margin-bottom:50px;
+}
+#transbutton{
+    color:#333;
+}
+
+/*krajpopup*/
+
+
+.add_account{
+    width:500px;
+    height:500px;
+    background-color: white!important;
+    border:2px solid #d2dadd;
+    border-radius: 10px;
+    padding:20px;
+}
